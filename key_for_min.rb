@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   min_value = values_array[0]
   key_min = ""
   name_hash.collect do |key, value|
-    if value < min_value
+    if value <= min_value
       key_min = key
       min_value = value
     end
